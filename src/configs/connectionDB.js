@@ -1,11 +1,12 @@
 import Sequelize from "sequelize";
+import config from "../config.js";
 
 const sequelize = new Sequelize(
-  "promass_db",
-  "root",
-  "",
+  config.NAME_DB,
+  config.USER_DB,
+  config.PASSWORD_DB,
   {
-    host: "localhost",
+    host: config.HOST_DB,
     dialect: "mysql",
     define: {
       freezeTableName: true,

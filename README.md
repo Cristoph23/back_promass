@@ -13,6 +13,7 @@ Este proyecto es una aplicación de posts que permite a los usuarios crear, leer
     npm install
 
 3. Crear el archivo .env e inicializa las variables:
+    ```bash
     PORT = Puerto aplicacion
     HOST_DB = HOST DE LA BASE DE DATOS
     NAME_DB = NOMBRE DE LA TABLA
