@@ -1,5 +1,5 @@
-import app from "./app";
+import app from "./app.js";
 
-app.listen(process.env.PORT, () => {
-    console.log(`Server on port ${process.env.PORT}`)
+app.listen(3030, () => {
+    console.log(`Server on port ${3030}`)
 })

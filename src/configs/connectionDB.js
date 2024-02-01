@@ -1,13 +1,12 @@
 import Sequelize from "sequelize";
 
 const sequelize = new Sequelize(
-  process.env.NAME_DB,
-  process.env.USER_DB,
-  process.env.PASSWORD_DB,
+  "promass_db",
+  "root",
+  "",
   {
-    host: process.env.HOST_DB,
+    host: "localhost",
     dialect: "mysql",
-    timezone: "America/Mexico_City",
     define: {
       freezeTableName: true,
     },
