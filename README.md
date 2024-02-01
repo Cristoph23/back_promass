@@ -1,30 +1,32 @@
-# React + TypeScript + Vite
+# Backend Prueba Tecnica Promass
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación de posts que permite a los usuarios crear, leer, actualizar y eliminar publicaciones. La aplicación consta de un backend desarrollado con Node.js.
 
-Currently, two official plugins are available:
+## Instalación
+1. Clona este repositorio:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+   ```bash
+    git clone https://github.com/Cristoph23/back_promass.git
 
-## Expanding the ESLint configuration
+2. Instala las dependencias:
+    ```bash
+    npm install
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+3. Crear el archivo .env e inicializa las variables:
+    PORT = Puerto aplicacion
+    HOST_DB = HOST DE LA BASE DE DATOS
+    NAME_DB = NOMBRE DE LA TABLA
+    USER_DB = USER DE LA BASE DE DATOS
+    PASSWORD_DB = CONTRASEÑA DE LA BASE DE DATOS 
 
-- Configure the top-level `parserOptions` property like this:
+4. Inicia el servidor de desarrollo:
+    ```bash
+    npm start
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Tecnologías Utilizadas
+Node.js, Express, 
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Este README proporciona una descripción general de la aplicación, instrucciones de instalación para el backend y lista las tecnologías utilizadas. Recuerda adaptar este ejemplo según las especificidades de tu aplicación y los requisitos de tu proyecto.
+
+
+
